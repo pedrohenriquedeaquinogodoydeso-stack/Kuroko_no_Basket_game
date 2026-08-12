@@ -1,0 +1,5 @@
+Stamina máxima = linha 32
+velocidade correndo = def update, if correndo, velocidade
+perda de stamina = def update, if correndo, (stamina-= numero * dt)
+
+velocidade da bola (arremesso)= def update, if ball_arremessada, if.

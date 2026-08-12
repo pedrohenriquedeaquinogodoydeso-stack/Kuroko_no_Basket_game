@@ -1,0 +1,128 @@
+- Tamanho da bola [✅]
+-bola faz ponto no lobby pq toca na sexta [✅]
+-Animação da bola [✅]
+-save [✅]
+
+########### TELAS ##########
+- Tela de fim de jogo com: 
+	-vencedor []
+	-melhor jogador[]
+	-mais passes[]
+	-mais sextas[]
+	-mais roubadas de bola[]
+	-ganhar dinheiro com base no quanto fez na partida (passes, sextas)[]
+- Tela de giro e quantidades de giro restantes[]
+	- Spin de estilo e aura []
+	- comprar giros com dinheiro[]
+	- imagem dos giros ex: Sombra style []
+#############################################################
+
+#################### TIMES ##########################
+- dá pra jogar com diferentes TIMES[]
+#####################################################
+
+########### ZONA (DESPERTAR)#######################
+- Midorima (cutsciene), confia no passes do colega[]
+- Akashi (cutsciene), derruba o oponente e joga lentamente até a sexta[]
+- Kuroko (cutsciene), faz aquele passe lá na frente com a palma da mão[]
+- Aomine (cutsciene), []
+
+#Buff especial de cada um[]
+- midorima = resistência (stamina)[]
+- Aomine = menos cooldown de drible + velocidade[]
+- Akashi = Depende de qual bipolaridade é o despertar, vai ter um "taunt" = provocar o adversário,
+se o oponente faz isso depois de marcar, o despertar vira da segunda personalidade dele 
+Personalidade1 = menos cooldown de drible e roubo + velocidade []
+Personalidade2 = tudo um pouco (perde menos stamina, mais stamina total, menos cooldown de drible..)[]
+
+Skill - 1[]
+- Akashi = olho do imperador (intercepta um passe ou um arremesso)[]
+- Aomine = 
+###################################################
+
+######### PARTIDA ##################
+
+-Sexta2 funcionar [✅]
+	-lance de longe [✅]
+	-enterrada [✅]
+	-pontos diferentes [✅]
+	-reinicio da partida []
+	
+- tempo de jogo [✅]
+	-reinicia []
+	-vai até 3 minutos [✅]
+
+- posições no jogo []
+	- verificar se tem outros players []
+	- se entrar, a posição fica ocupada []
+	- toda vez q a partida reiniciar a posição do cara
+	  volta com base na posição  []
+
+- Sexta fora do lugar [✅]
+	- duas cestas [✅]
+
+
+- bola não ser teleguiada [✅]
+#############################################
+
+##################### BÁSICO ############################
+- fazer status dos personagens []
+- fazer skills dos personagens[]
+- skill básica roubo [✅]
+	-coooldown do roubo[✅]
+- Skill básica de passe e drible[✅]
+#########################################################
+
+################ Bonitinhos (SPRITES) ########################
+-fazer sprite dos personagens [✅]
+	- Aomine [✅]
+	- Kise [✅]
+	-murasakibara [✅]
+	
+##############################################################
+
+
+######### MULTIPLAYER ######################
+-para as skills funcionarem precisa de uma lista com os oponentes
+lista time 1 e lista time2, se estou no time1 quando uso a skill
+tem q ser perto de algm do time 2 []
+
+-Passar a bola []
+
+- multiplayer []
+
+sobre multiplayer: 
+
+Sim, é perfeitamente possível criar jogos online com Python em 2026. A linguagem é amplamente utilizada tanto para a lógica do servidor quanto para a criação de jogos completos, incluindo títulos famosos como EVE Online e World of Tanks, que utilizam Python extensivamente em suas infraestruturas. 
+Para desenvolver um jogo online, você pode seguir dois caminhos principais:
+1. Bibliotecas para a Lógica do Jogo
+Pygame: É a biblioteca mais popular para iniciantes criarem jogos 2D. Embora seja focada em jogos locais, pode ser integrada a módulos de rede para torná-los online.
+Pidebag: Permite exportar jogos feitos em Pygame para a web, facilitando o acesso online através de navegadores. 
+2. Infraestrutura para o Modo Multiplayer
+Para que o jogo seja "online", você precisará gerenciar a comunicação entre os jogadores:
+Websockets e Sockets: Essenciais para a comunicação em tempo real entre cliente e servidor.
+Frameworks Web (Backend): Ferramentas como Django ou Flask podem ser usadas para gerenciar contas de usuários, rankings e persistência de dados no servidor.
+Hospedagem: Em 2026, existem diversas opções de hospedagem VPS otimizadas para Python no Brasil, como a HostGator ou serviços especializados como Liquid Web, que garantem a estabilidade do servidor do jogo. 
+Exemplos Reais e Recursos
+Jogos Educativos: Plataformas como o CodeCombat utilizam Python para ensinar programação através de jogos.
+Sistemas Anti-Cheat: Com o avanço da IA, desenvolvedores Python em 2026 já implementam sistemas de machine learning para detectar comportamentos suspeitos e bots em jogos competitivos. 
+Se você está começando agora, o caminho recomendado é aprender a biblioteca Pygame para a interface e lógica, e depois estudar bibliotecas de rede como socket ou asyncio para a funcionalidade online. 
+
+
+
+Sim, existem opções para hospedar servidores de jogos em Python de graça em 2026, mas com limitações importantes que você deve conhecer antes de começar.
+Principais Opções de Servidores Gratuitos:
+PythonAnywhere: Oferece um plano "Beginner" (iniciante) totalmente gratuito.
+Vantagem: É muito fácil de configurar para frameworks como Flask ou Django.
+Limitação: O plano gratuito tem acesso restrito à internet externa e não suporta bem aplicações em tempo real (como chats ou jogos que exigem conexões constantes e rápidas via WebSockets).
+Google Cloud (GCP) e Oracle Cloud:
+O Google Cloud oferece um período de teste (geralmente 90 dias) com crédito gratuito para você criar uma máquina virtual (VPS) e rodar seu código Python.
+A Oracle Cloud possui um nível "Sempre Gratuito" (Always Free) que inclui instâncias de computação que podem ser usadas para rodar servidores de jogos leves.
+HidenCloud: Uma opção voltada especificamente para servidores de jogos, com um plano gratuito que promete implantação rápida e funcionamento 24/7. 
+O que você precisa saber (As "pegadinhas"):
+Recursos Limitados: Servidores gratuitos costumam ter pouca memória RAM e processamento (CPU). Se o seu jogo tiver muitos jogadores simultâneos ou cálculos complexos, ele vai travar.
+Conexões em Tempo Real: Jogos online geralmente precisam de WebSockets para que os jogadores vejam os movimentos uns dos outros sem atraso. Muitos planos gratuitos de hospedagem web (como o PythonAnywhere grátis) bloqueiam ou limitam esse tipo de conexão.
+Endereço IP e Domínio: No plano grátis, você geralmente não terá um endereço próprio (ex: meujogo.com.br), mas sim um subdomínio do serviço (ex: usuario.pythonanywhere.com). 
+Recomendação: Para aprender e testar com 2 ou 3 amigos, o PythonAnywhere ou as camadas gratuitas da Oracle/Google Cloud atendem bem. Se o seu jogo crescer para mais de 30 jogadores, você provavelmente precisará migrar para uma VPS paga (que em 2026 custa a partir de R$ 50,00/mês no Brasil) para garantir que ninguém sofra com "lag". 
+
+#########################################################################
